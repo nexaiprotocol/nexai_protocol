@@ -1,0 +1,14 @@
+server:
+  port: 9977
+
+logging:
+  level:
+    root: error
+
+spring:
+  main:
+    banner-mode: off
+  application:
+    name: agent-protocol
+  profiles:
+    active: dev

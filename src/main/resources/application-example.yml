@@ -1,0 +1,65 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/agent
+  ai:
+    openai:
+      base-url: https://api.openai.com
+      api-key: "Your API KEY"
+      chat:
+        options:
+          temperature: 0.7
+          model: "gpt-4o" #gpt-4o-mini
+
+    vertex:
+      ai:
+      #        embedding:
+      #          project-id: "a123"
+      #          location: us-central1
+
+    gemini:
+      project-id: "a123"
+      location: us-central1
+
+    ollama:
+      chat:
+        enabled: true
+
+    anthropic:
+      chat:
+        enabled: true
+      api-key:
+      base-url:
+#          credentials-uri:  credentials: classpath:google-credentials.json
+
+ai:
+  chatgpt:
+    api-url: "https://api.openai.com/v1/chat/completions"
+    api-key: "Your API KEY"
+    model: "gpt-4o-mini" #gpt-4o-mini     gpt-3.5-turbo
+# Blockchain mainnet config
+mainnet:
+  base:
+    url: "https://mainnet.base.org"
+    address:
+    public-key:
+    private-key:
+    contract:
+  ethereum:
+    url: "https://mainnet.infura.io"
+    address:
+    public-key:
+    private-key:
+    contract:
+  solana:
+    url: "https://api.mainnet-beta.solana.com"
+    address:
+    public-key:
+    private-key: ""
+    contract:
+  polygon:
+    url: "https://polygon-mainnet.infura.io"
+    address:
+    public-key:
+    private-key:
+    contract:
